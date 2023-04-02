@@ -1,11 +1,17 @@
 import './Login.css';
 import React from 'react';
 
-function Login () {
+function Login ({handleLogin}) {
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleLogin()
+  }
+
   return (
     <div className="login">
       <div className="login__box">
-      <form className="login__form">
+      <form className="login__form" onSubmit={handleSubmit}>
         <h2 className="login__title">Simple Hotel Check</h2>
         <fieldset className="login__fieldset">
           <label className="login__field">
