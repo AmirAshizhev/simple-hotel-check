@@ -18,7 +18,7 @@ function Login () {
               className="login__input" 
               required 
               pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-              placeholder='login@emal.com'
+              placeholder='login@mail.com'
             />
             <span className="login__input-error"></span>
           </label>
