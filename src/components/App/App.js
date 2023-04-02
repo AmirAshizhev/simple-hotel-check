@@ -2,19 +2,23 @@
 import { useState } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from '../Login/Login';
+import Page from '../Page/Page';
 import './App.css';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 
 function App() {
   const navigate = useNavigate();
 
-  const [loggedIn, setLoggedIn] = useState(false)
+  const [loggedIn, setLoggedIn] = useState(true)
 
   function handleLogin() {
     setLoggedIn(true)
     navigate('/test')
   }
 
+  function handleLogout() {
+    setLoggedIn(false)
+  }
 
 
   return (
@@ -24,7 +28,7 @@ function App() {
         <Route path='/sign-in' element={<Login handleLogin={handleLogin}/>}/>
         <Route path='/' element={
           <ProtectedRoute loggedIn={loggedIn}>
-            <h1>test</h1>
+            <Page handleLogout={handleLogout}/>
           </ProtectedRoute>
         }/>
         <Route path='*' element={
