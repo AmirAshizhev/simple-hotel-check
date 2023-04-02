@@ -1,47 +1,23 @@
-.login{
-  background-image: url('../../images/background.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.search{
+  /* background: #FFFFFF;
+  border-radius: 16px; */
 }
 
-.login__box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-}
-
-.login__form{
+.search__form{
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #FFFFFF;
-  max-width: 345px;
+  max-width: 296px;
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   padding: 32px;
 }
 
-.login__title{
-  font-family: 'Roboto', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 0 32px 0;
-  color: #424242;
-}
-
-.login__input{
+.search__input{
   border: 1px solid #C9CACC;
   border-radius: 4px;
-  margin: 7px 0;
+  margin: 7px 0 0 0;
   padding: 16px;
 
   font-family: 'Roboto', Arial, sans-serif;
@@ -51,44 +27,33 @@
   line-height: 18px;
 }
 
-.login__fieldset{
-  width: 345px;
+.search__fieldset{
+  width: 296px;
   padding: 0;
   border: 0;
   display: flex;
   flex-direction: column;
-  margin: 0 0 12px 0;
-  gap: 4px;
+  margin: 0 0 32px 0;
+  gap: 16px;
 }
 
-.login__field{
+.search__field{
   display: flex;
   flex-direction: column;
-  height: 110px;
 
 }
 
-.login__input-label{
+.search__input-label{
   align-self: flex-start;
   font-family: 'Roboto', Arial, sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #424242;
 }
 
-.login__input-error{
-  font-family: 'Roboto', Arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
-  color: #EB1717;
-  text-align: start;
-}
-
-.login__button{
+.search__button{
   width: 100%;
   height: 50px;
   background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
@@ -104,17 +69,17 @@
   color: #FFFFFF;
 }
 
-.login__button:hover{
+.search__button:hover{
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
   cursor: pointer;
 }
 
-.login__button:active{
+.search__button:active{
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
 }
 
 
-.login__button:disabled{
+.search__button:disabled{
   background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
   opacity: 0.75;
   cursor: default;

@@ -1,9 +1,14 @@
+import Favorites from '../Favorites/Favorites';
+import Search from '../Search/Search';
+import SearchRecult from '../SearchRecult/SearchRecult';
 import './Main.css';
 
 function Main(){
   return (
     <div className='main'>
-      <h1>main</h1>
+      <Search/>
+      <SearchRecult/>
+      <Favorites/>
     </div>
   )
 }
