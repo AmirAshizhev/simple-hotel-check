@@ -63,8 +63,18 @@
   right: 0;
 }
 
-.hotel__like{
-  background-image: url('../../images/like.svg');
+.hotel__like:hover{
+  background-image: url('../../images/like_hover.svg');
+  cursor: pointer;
+}
+
+.hotel__like_active{
+  background-image: url('../../images/like_active.svg');
+}
+
+.hotel__like_active:hover{
+  background-image: url('../../images/like_active.svg');
+  cursor: pointer;
 }
 
 
