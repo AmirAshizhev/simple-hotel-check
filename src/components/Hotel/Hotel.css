@@ -1,6 +1,5 @@
 .hotel{
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
 .hotel__title{
@@ -10,12 +9,14 @@
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.408px;
-
+  margin: 0;
   color: #424242;
+  position: absolute;
 }
 
 .hotel__box{
   display: flex;
+  margin: 26px 0;
 }
 
 .hotel__date{
@@ -28,6 +29,16 @@
   
   color: #878787;
   margin: 0;
+}
+
+.hotel__date-line{
+  background-color: #C4C4C4;
+  border: 0;
+  width: 9px;
+  height: 1px;
+  margin: 0 15px;
+  align-self: center;
+  border-radius: 2px;
 }
 
 .hotel__duration{
@@ -47,7 +58,15 @@
   width: 21px;
   height: 18px;
   background-size: cover;
+  position: absolute;
+  top:0;
+  right: 0;
 }
+
+.hotel__like{
+  background-image: url('../../images/like.svg');
+}
+
 
 .hotel__price{
   font-family: 'Roboto', Arial, sans-serif;
@@ -56,8 +75,11 @@
   font-size: 17px;
   line-height: 22px;  
   letter-spacing: -0.408px;
-  
+  margin: 0;
   color: #424242;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
 }
 
 .hotel__price-span{
@@ -67,6 +89,26 @@
   font-size: 11px;
   line-height: 22px;
   letter-spacing: -0.408px;
-
+  margin-right: 18px;
   color: #878787;
+}
+
+.hotel__rating{
+  display: flex;
+  gap: 3px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.hotel__star{
+  background-image: url('../../images/star.svg');
+  height: 17px;
+  width: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }

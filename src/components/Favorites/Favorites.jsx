@@ -12,7 +12,9 @@ function Favorites () {
       </div>
       <ul className='favorites__list'>
         <Hotel/>
+        <hr className='favorites__line'/>
         <Hotel/>
+        <hr className='favorites__line'/>
         <Hotel/>
       </ul>
 

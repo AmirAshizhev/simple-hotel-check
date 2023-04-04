@@ -9,8 +9,6 @@ function FilterButton({name}){
     setButtonState((buttonState+1) % 3)
   }
 
-  console.log(buttonState)
-
   return(
     <button className={`filterButton ${buttonState !== 0 && 'filterButton_on'}`} onClick={handleClick}>
       <span className={`filterButton__name ${buttonState !== 0 && 'filterButton__name_on'}`}>{name}</span>
