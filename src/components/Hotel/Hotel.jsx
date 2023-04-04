@@ -5,7 +5,6 @@ function Hotel () {
 
   const [isLiked, setIsLiked] = useState(false)
 
-  console.log(isLiked)
   const handleClick = () =>{
     setIsLiked(!isLiked)
   }

@@ -11,7 +11,7 @@ function Search() {
               type="search"  
               name="search" 
               className="search__input" 
-              value={'Москва'}
+              defaultValue={'Москва'}
               required 
             />
           </label>
