@@ -1,0 +1,58 @@
+.filterButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 4px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.filterButton_on{
+  background: #FFFFFF;
+  border: 1px solid #41522E;
+}
+
+.filterButton__name{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.408px;
+
+  color: #99A0A3;
+}
+
+.filterButton__name_on{
+  color: #41522E;
+}
+
+.filterButton__icon{
+
+  width: 18px;
+  height: 18px; 
+}
+
+.filterButton__icon_off{
+  background-image: url(../../images/select.svg);
+}
+
+.filterButton__icon_up{
+  background-image: url(../../images/select__up.svg);
+}
+
+.filterButton__icon_down{
+  background-image: url(../../images/select__down.svg);
+  transform: rotate(180deg);
+}
+
+.filterButton:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.filterButton:active{
+  opacity: 1;
+}
