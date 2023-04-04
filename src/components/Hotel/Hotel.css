@@ -1,0 +1,72 @@
+.hotel{
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel__title{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+
+  color: #424242;
+}
+
+.hotel__box{
+  display: flex;
+}
+
+.hotel__date{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  
+  color: #878787;
+  margin: 0;
+}
+
+.hotel__duration{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  
+  color: #878787;
+  margin: 0;
+}
+
+.hotel__like{
+  background-image: url('../../images/like.svg');
+  width: 21px;
+  height: 18px;
+  background-size: cover;
+}
+
+.hotel__price{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;  
+  letter-spacing: -0.408px;
+  
+  color: #424242;
+}
+
+.hotel__price-span{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+
+  color: #878787;
+}
