@@ -10,6 +10,14 @@
   overflow-x: scroll;
 }
 
+.imageCarousel__items:hover{
+  cursor: pointer;
+}
+
+.imageCarousel__items:active{
+  cursor: grabbing;
+}
+
 .imageCarousel__items::-webkit-scrollbar{
   display: none;
 }

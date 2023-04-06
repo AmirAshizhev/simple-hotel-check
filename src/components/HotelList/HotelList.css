@@ -1,0 +1,48 @@
+.hotelList{
+  display: flex;
+  flex-direction: column;
+}
+
+.hotelList__title{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  
+  color: #424242;
+  margin: 0;
+}
+
+.hotelList__title-span{
+  font-weight: 500;
+  color: #41522E;
+  margin: 0 4px 0 8px;
+}
+
+.hotelList__countainer{
+  max-height: 563px ;
+}
+
+.hotelList__items{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
+  padding: 8px 14px 0 0;
+  margin: 0;
+}
+
+.hotelList__items::-webkit-scrollbar{
+  background: #E7E7E7;
+  border-radius: 2px;
+  width: 2px;
+}
+
+.hotelList__items::-webkit-scrollbar-thumb{
+  background: #41522E;
+  border-radius: 2px;
+  width: 2px;
+  height: 100px;
+}
