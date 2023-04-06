@@ -1,14 +1,19 @@
 .imageCarousel{
 
   max-width: 600px;
-  overflow-x: scroll;
 }
 
 .imageCarousel__items{
   display: flex;
   flex-direction: row;
   gap: 12px;
+  overflow-x: scroll;
 }
+
+.imageCarousel__items::-webkit-scrollbar{
+  display: none;
+}
+
 .imageCarousel__img{
   min-width: 164px;
   min-height: 149px;
