@@ -24,6 +24,7 @@
   font-size: 32px;
   line-height: 38px;
   color: #424242;
+  display: flex;
 }
 
 .search-result__data{
@@ -35,3 +36,13 @@
   color: #41522E;
   margin: 0;
 }
+
+.search-result__arrow{
+  background-image: url('../../images/arrow.svg');
+  width: 11px;
+  height: 20px;
+  display: block;
+  align-self: center;
+  margin: 0 20px;
+}
+

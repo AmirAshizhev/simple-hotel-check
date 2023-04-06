@@ -1,0 +1,17 @@
+.imageCarousel{
+
+  max-width: 600px;
+  overflow-x: scroll;
+}
+
+.imageCarousel__items{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.imageCarousel__img{
+  min-width: 164px;
+  min-height: 149px;
+  background-image: url(../../images/img1.png);
+  background-position: top;
+}
