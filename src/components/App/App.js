@@ -5,19 +5,27 @@ import Login from '../Login/Login';
 import Page from '../Page/Page';
 import './App.css';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
+import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const navigate = useNavigate();
 
-  const [loggedIn, setLoggedIn] = useState(true)
+  const dispatch = useDispatch()
 
-  function handleLogin() {
-    setLoggedIn(true)
+  // const [loggedIn, setLoggedIn] = useState(true)
+
+  const loggedIn = useSelector(state => state.loggedIn)
+
+  function handleLogin(email) {
+    // setLoggedIn(true)
+    localStorage.setItem('token', email)
+    dispatch({type: "LOGIN", payload: {email}})
     navigate('/test')
   }
 
   function handleLogout() {
-    setLoggedIn(false)
+    // setLoggedIn(false)
+    dispatch({type: "LOGOUT"})
   }
 
 

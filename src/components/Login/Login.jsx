@@ -9,7 +9,7 @@ function Login ({handleLogin}) {
   function handleSubmit(e) {
     e.preventDefault();
     if(formValues.isValid){
-        handleLogin()
+        handleLogin(formValues.values.email)
     }
   }
 
