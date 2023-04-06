@@ -1,0 +1,147 @@
+.hotelCard{
+  display: grid;
+  grid-template-columns: 64px auto 150px;
+  padding: 16px 16px 16px 0;
+  gap: 24px;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.2);
+}
+
+.hotelCard:last-child{
+
+  border-bottom: none;
+}
+
+.hotelCard__img{
+  background-image: url('../../images/house.svg');
+  margin-top: 3px;
+  height: 64px;
+  width: 64px;
+  background-color: rgba(65, 82, 46, 0.05);
+  border-radius: 50%;
+  background-position: bottom 16px right 15px;
+  background-repeat: no-repeat;
+}
+
+.hotelCard__title-group{
+  margin-top: 3px;
+}
+
+.hotelCard__title{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  margin: 0;
+  color: #424242;
+}
+
+.hotelCard__box{
+  display: flex;
+  margin: 0;  
+}
+
+.hotelCard__date{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  
+  color: #878787;
+  margin: 0;
+}
+
+.hotelCard__date-line{
+  background-color: #C4C4C4;
+  border: 0;
+  width: 9px;
+  height: 1px;
+  margin: 0 15px;
+  align-self: center;
+  border-radius: 2px;
+}
+
+.hotelCard__duration{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  
+  color: #878787;
+  margin: 0;
+}
+
+.hotelCard__like-group{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+
+}
+
+.hotelCard__like{
+  background-image: url('../../images/like.svg');
+  width: 21px;
+  height: 18px;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.hotelCard__like:hover{
+  background-image: url('../../images/like_hover.svg');
+  cursor: pointer;
+}
+
+.hotelCard__like_active{
+  background-image: url('../../images/like_active.svg');
+}
+
+.hotelCard__like_active:hover{
+  background-image: url('../../images/like_active.svg');
+  cursor: pointer;
+}
+
+
+.hotelCard__price{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;  
+  letter-spacing: -0.408px;
+  margin: 0 0 4px 0;
+  color: #424242;
+}
+
+.hotelCard__price-span{
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  margin-right: 18px;
+  color: #878787;
+}
+
+.hotelCard__rating{
+  display: flex;
+  gap: 3px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.hotelCard__star{
+  background-image: url('../../images/star.svg');
+  height: 17px;
+  width: 17px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

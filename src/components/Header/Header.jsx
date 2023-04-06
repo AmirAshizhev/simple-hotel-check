@@ -9,7 +9,7 @@ function Header({handleLogout}){
       <div className='header__box'>
         <p className='header__text'>Simple Hotel Check</p>
         <Link className='header__link' to="/sign-in" onClick={handleLogout}>
-          <p className='header__link-text'>Выход</p>
+          <p className='header__link-text'>Выйти</p>
           <img className='header__img' src={img} alt='exit'/>
         </Link>
       </div>
