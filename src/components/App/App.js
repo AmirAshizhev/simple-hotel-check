@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Navigate, Route, Routes, useNavigate } from 'react-router-dom';
 import Login from '../Login/Login';
 import Page from '../Page/Page';
@@ -14,7 +14,7 @@ function App() {
 
   // const [loggedIn, setLoggedIn] = useState(true)
 
-  const loggedIn = useSelector(state => state.loggedIn)
+  const loggedIn = useSelector(state => state.auth.loggedIn)
 
   function handleLogin(email) {
     // setLoggedIn(true)

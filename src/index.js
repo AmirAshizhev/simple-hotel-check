@@ -4,36 +4,9 @@ import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { legacy_createStore as createStore } from 'redux';
+
 import { Provider } from 'react-redux';
-
-
-const defaultState = {
-  loggedIn: !!localStorage.getItem('token'),
-  token: localStorage.getItem('token')
-}
-
-const reduser = (state = defaultState, action) => {
-  switch (action.type) {
-    case "LOGIN": 
-      return {
-        ...state, 
-        loggedIn: true, 
-        token: action.payload.email
-      }
-    case "LOGOUT": 
-      localStorage.removeItem('token')
-      return {
-        ...state, 
-        loggedIn: false,
-        token: null
-      }
-    default: 
-      return state
-  }
-}
-
-const store = createStore(reduser)
+import { store } from './store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
