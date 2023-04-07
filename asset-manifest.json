@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/simple-hotel-check/static/css/main.b437123e.css",
+    "main.js": "/simple-hotel-check/static/js/main.16db937e.js",
+    "static/js/787.3c9828e8.chunk.js": "/simple-hotel-check/static/js/787.3c9828e8.chunk.js",
+    "static/media/background.png": "/simple-hotel-check/static/media/background.6bd8f5eaf9d46fad436d.png",
+    "static/media/Roboto-Medium.ttf": "/simple-hotel-check/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/simple-hotel-check/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/Roboto-Light.ttf": "/simple-hotel-check/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
+    "static/media/img1.png": "/simple-hotel-check/static/media/img1.9b4d5fbefb7b5bf8151d.png",
+    "static/media/star.svg": "/simple-hotel-check/static/media/star.8f1b0d15f28a809ac23a.svg",
+    "static/media/house.svg": "/simple-hotel-check/static/media/house.34c3586cf18e68d8e68d.svg",
+    "static/media/star_active.svg": "/simple-hotel-check/static/media/star_active.445c3cbc9de6af22507f.svg",
+    "static/media/like_hover.svg": "/simple-hotel-check/static/media/like_hover.ae5224777fb9525e2fbf.svg",
+    "static/media/like.svg": "/simple-hotel-check/static/media/like.12e0baf1a8017f8b5e41.svg",
+    "static/media/like_active.svg": "/simple-hotel-check/static/media/like_active.9eeeed1414023ae91e0f.svg",
+    "index.html": "/simple-hotel-check/index.html",
+    "static/media/exit.svg": "/simple-hotel-check/static/media/exit.6541d62259e47627326550b1557c3866.svg",
+    "static/media/select.svg": "/simple-hotel-check/static/media/select.851097961ff149baa173.svg",
+    "static/media/select__up.svg": "/simple-hotel-check/static/media/select__up.b8d9ee4162648e2556ce.svg",
+    "static/media/arrow.svg": "/simple-hotel-check/static/media/arrow.ecfc16f7a5f0685dc819.svg",
+    "main.b437123e.css.map": "/simple-hotel-check/static/css/main.b437123e.css.map",
+    "main.16db937e.js.map": "/simple-hotel-check/static/js/main.16db937e.js.map",
+    "787.3c9828e8.chunk.js.map": "/simple-hotel-check/static/js/787.3c9828e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b437123e.css",
+    "static/js/main.16db937e.js"
+  ]
+}
