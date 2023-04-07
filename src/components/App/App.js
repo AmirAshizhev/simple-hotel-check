@@ -6,15 +6,29 @@ import Page from '../Page/Page';
 import './App.css';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+// import hotelApi from '../../utils/HotelApi';
 
 function App() {
   const navigate = useNavigate();
 
   const dispatch = useDispatch()
 
+  // useEffect(() => {
+  //   hotelApi.getHotel()
+  //   .then((res) => {
+  //     console.log(res)
+  //   })
+  // }, [])
   // const [loggedIn, setLoggedIn] = useState(true)
 
   const loggedIn = useSelector(state => state.auth.loggedIn)
+  // const search = useSelector(state => state.search)
+
+  // dispatch({
+  //   type: 'FETCH_HOTELS',
+  //   payload: search
+  // })
 
   function handleLogin(email) {
     // setLoggedIn(true)
