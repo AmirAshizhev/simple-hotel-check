@@ -5,7 +5,8 @@ import './HotelList.css'
 function HotelList() {
 
   const searchResult = useSelector(state => state.search.data);
-  console.log(searchResult)
+  const favoriteshotels = useSelector(state => state.favoriteshotels.favoriteshotels)
+  // console.log(searchResult)
 
   const hotelCardsList = searchResult.map((hotel, i) => (
     <HotelCard
@@ -18,7 +19,7 @@ function HotelList() {
 
   return (
     <div className='hotelList'>
-      <h3 className='hotelList__title'>Добавлено в Избранное:<span className='hotelList__title-span'>5</span>отелей</h3>
+      <h3 className='hotelList__title'>Добавлено в Избранное:<span className='hotelList__title-span'>{favoriteshotels.length}</span>отелей</h3>
       <div className='hotelList__countainer'>
         <ul className='hotelList__items'>
           {hotelCardsList}

@@ -21,8 +21,8 @@ function Hotel ({hotel, searchData, days, date}) {
     `hotel__like ${isLiked && 'hotel__like_active'}`
   )
 
-  console.log(favoriteshotels)
-  console.log(searchData)
+  // console.log(favoriteshotels)
+  // console.log(searchData)
 
   const rating = [];
 

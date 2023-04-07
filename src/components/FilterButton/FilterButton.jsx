@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './FilterButton.css'
 
-function FilterButton({name}){
+function FilterButton({name, buttonState, setButtonState}){
 
-  const [buttonState, setButtonState] = useState(0);
+
 
   const handleClick = () => {
     setButtonState((buttonState+1) % 3)
