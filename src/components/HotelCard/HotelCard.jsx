@@ -1,16 +1,25 @@
 import './HotelCard.css'
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-function HotelCard ({hotelName, priceAvg, stars}) {
+function HotelCard ({hotelName, priceAvg, stars, hotel}) {
 
   const [isLiked, setIsLiked] = useState(false)
 
   const search = useSelector(state => state.search)
-  console.log(search)
+  // const favoriteshotels = useSelector(state => state.favoriteshotels)
+  const dispatch = useDispatch()
+  // console.log(favoriteshotels)
+  // console.log(isLiked)
 
   const handleClick = () =>{
     setIsLiked(!isLiked)
+
+    if(!isLiked) {
+      dispatch({type: "ADD_HOTEL", payload: {hotel: hotel, searchData: search}})
+    } else if(isLiked) {
+      dispatch({type: "REMOVE_HOTEL", payload: hotel.hotelId})
+    }
   }
 
   const holelLikeClass = (
@@ -52,7 +61,7 @@ function HotelCard ({hotelName, priceAvg, stars}) {
       <div className='hotelCard__like-group'>
         <div className={holelLikeClass} onClick={handleClick}></div>
         <p className='hotelCard__price'>
-          <span className='hotelCard__price-span'>Price: </span> {priceAvg}
+          <span className='hotelCard__price-span'>Price: </span> {priceAvg} ₽
         </p>       
       </div>
 

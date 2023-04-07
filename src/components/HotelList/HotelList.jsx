@@ -11,7 +11,7 @@ function HotelList() {
     <HotelCard
       {...hotel}
       hotel={hotel}
-      key={i}
+      key={hotel.hotelId}
 
     />
   ))

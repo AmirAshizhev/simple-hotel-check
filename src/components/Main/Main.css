@@ -3,6 +3,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 360px 664px;
-  grid-template-rows: auto auto;
+  grid-template-rows: 410px auto;
   gap: 24px;
 }
