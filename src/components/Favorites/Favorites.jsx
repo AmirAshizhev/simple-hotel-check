@@ -29,11 +29,8 @@ function Favorites () {
     })
   } 
 
-
-  console.log(buttonPraceState)
-
   const hotelCardsList = favoriteshotels.map((hotel, i) => (
-    // console.log(hotel.searchData),
+
     <Hotel
     {...hotel.hotel}
     hotel={hotel.hotel}
@@ -54,11 +51,6 @@ function Favorites () {
       </div>
       <ul className='favorites__list'>
         {hotelCardsList}
-        {/* <Hotel/>
-        <hr className='favorites__line'/>
-        <Hotel/>
-        <hr className='favorites__line'/>
-        <Hotel/> */}
       </ul>
 
     </section>

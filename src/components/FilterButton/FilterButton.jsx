@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './FilterButton.css'
 
 function FilterButton({name, buttonState, setButtonState}){

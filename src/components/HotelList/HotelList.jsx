@@ -6,7 +6,6 @@ function HotelList() {
 
   const searchResult = useSelector(state => state.search.data);
   const favoriteshotels = useSelector(state => state.favoriteshotels.favoriteshotels)
-  // console.log(searchResult)
 
   const hotelCardsList = searchResult.map((hotel, i) => (
     <HotelCard

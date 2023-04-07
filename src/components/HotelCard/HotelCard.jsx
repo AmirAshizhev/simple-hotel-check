@@ -1,5 +1,5 @@
 import './HotelCard.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 function HotelCard ({hotelName, priceAvg, stars, hotel}) {
@@ -8,13 +8,6 @@ function HotelCard ({hotelName, priceAvg, stars, hotel}) {
 
   const search = useSelector(state => state.search)
   const dispatch = useDispatch()
-
-
-  // useEffect(()=>{
-  //   if(favoriteshotels === ){
-
-  //   }
-  // }, [favoriteshotels])
 
   const handleClick = () =>{
     setIsLiked(!isLiked)

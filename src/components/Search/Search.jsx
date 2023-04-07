@@ -6,7 +6,6 @@ function Search() {
 
   const dispatch = useDispatch();
   const search = useSelector(state => state.search)
-  // console.log(search)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -14,12 +13,6 @@ function Search() {
       type: 'FETCH_HOTELS',
       payload: search
     })
-
-
-    // console.log(location)
-    // console.log(search.date)
-    // console.log(checkOut)
-    // http://engine.hotellook.com/api/v2/cache.json?location=Москва&currency=rub&checkIn=2023-04-10&checkOut=2023-04-20&limit=10
   }
 
   const handleChange = (e) => {

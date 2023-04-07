@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import './Hotel.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 function Hotel ({hotel, searchData, days, date}) {
 
-  const search = useSelector(state => state.search)
-  const favoriteshotels = useSelector(state => state.favoriteshotels)
   const dispatch = useDispatch()
 
   const [isLiked, setIsLiked] = useState(true)
@@ -20,9 +18,6 @@ function Hotel ({hotel, searchData, days, date}) {
   const holelLikeClass = (
     `hotel__like ${isLiked && 'hotel__like_active'}`
   )
-
-  // console.log(favoriteshotels)
-  // console.log(searchData)
 
   const rating = [];
 
