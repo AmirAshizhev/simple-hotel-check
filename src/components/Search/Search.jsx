@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './Search.css';
-import { fetchHolteFromApi, fetchHoltelWorker, hotelWhatcher } from '../../saga/hotelSaga';
 
 function Search() {
 
 
   const dispatch = useDispatch();
   const search = useSelector(state => state.search)
-  console.log(search)
+  // console.log(search)
 
   const handleSubmit = (e) => {
     e.preventDefault()

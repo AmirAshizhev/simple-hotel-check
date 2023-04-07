@@ -13,22 +13,21 @@ function App() {
   const navigate = useNavigate();
 
   const dispatch = useDispatch()
+  const search = useSelector(state => state.search)
 
-  // useEffect(() => {
-  //   hotelApi.getHotel()
-  //   .then((res) => {
-  //     console.log(res)
-  //   })
-  // }, [])
+  
+  useEffect(() => {
+  dispatch({
+    type: 'FETCH_HOTELS',
+    payload: search
+  })
+  }, [])
   // const [loggedIn, setLoggedIn] = useState(true)
 
   const loggedIn = useSelector(state => state.auth.loggedIn)
-  // const search = useSelector(state => state.search)
 
-  // dispatch({
-  //   type: 'FETCH_HOTELS',
-  //   payload: search
-  // })
+
+
 
   function handleLogin(email) {
     // setLoggedIn(true)
