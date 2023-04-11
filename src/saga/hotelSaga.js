@@ -8,7 +8,7 @@ const fetchHolteFromApi = ({locationName, date, days}) => {
   checkOutDate.setDate(checkOutDate.getDate() + Number(days));
   let checkOut = checkOutDate.toISOString().slice(0, 10)
   // console.log(checkOut)
-  return fetch(`http://engine.hotellook.com/api/v2/cache.json?location=${locationName}&currency=rub&checkIn=${date}&checkOut=${checkOut}&limit=10`)
+  return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${locationName}&currency=rub&checkIn=${date}&checkOut=${checkOut}&limit=10`)
   }
 
 export function* fetchHoltelWorker(action) {
