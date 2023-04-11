@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Hotel.css';
 import { useDispatch } from 'react-redux';
+import { handlerDataFormat } from '../utils/handlerDataFormat';
 
 function Hotel ({hotel, searchData, days, date}) {
 
@@ -28,12 +29,13 @@ function Hotel ({hotel, searchData, days, date}) {
       rating.push(<li key={i} className="hotel__star"></li>);
     }
   }
+  
 
   return(
     <li className='hotel'>
       <h2 className='hotel__title'>{searchData.hotelName}</h2>
       <div className='hotel__box'>
-        <p className='hotel__date'>{date}</p>
+        <p className='hotel__date'>{handlerDataFormat(date)}</p>
         <hr className='hotel__date-line'/>
         <span className='hotel__duration'>{days} день</span>
       </div>

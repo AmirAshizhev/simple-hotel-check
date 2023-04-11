@@ -1,6 +1,7 @@
 import './HotelCard.css'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { handlerDataFormat } from '../utils/handlerDataFormat';
 
 function HotelCard ({hotelName, priceAvg, stars, hotel}) {
 
@@ -33,7 +34,7 @@ function HotelCard ({hotelName, priceAvg, stars, hotel}) {
     }
   }
 
-
+  
   return(
     <li className='hotelCard'>
       <div className='hotelCard__img'></div>
@@ -41,17 +42,12 @@ function HotelCard ({hotelName, priceAvg, stars, hotel}) {
       <div className='hotelCard__title-group'>
         <h2 className='hotelCard__title'>{hotelName}</h2>
         <div className='hotelCard__box'>
-          <p className='hotelCard__date'>{search.date}</p>
+          <p className='hotelCard__date'>{handlerDataFormat(search.date)}</p>
           <hr className='hotelCard__date-line'/>
           <span className='hotelCard__duration'>{search.days} дней</span>
         </div>
         <ul className='hotelCard__rating'>
           {rating}
-          {/* <li className='hotelCard__star'></li>
-          <li className='hotelCard__star'></li>
-          <li className='hotelCard__star'></li>
-          <li className='hotelCard__star'></li>
-          <li className='hotelCard__star'></li> */}
         </ul>
       </div>
 
