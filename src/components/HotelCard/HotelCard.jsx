@@ -1,7 +1,7 @@
 import './HotelCard.css'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { handlerDataFormat } from '../utils/handlerDataFormat';
+import { handlerDataFormat } from '../../utils/handlerDataFormat'
 import { declesionOfDays } from '../../utils/handlersOfDeclension';
 
 function HotelCard ({hotelName, priceAvg, stars, hotel}) {

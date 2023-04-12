@@ -2,7 +2,8 @@ import { useSelector } from 'react-redux';
 import HotelList from '../HotelList/HotelList';
 import ImageCarousel from '../ImageCarousel/ImageCarousel';
 import './SearchRecult.css';
-import { handlerDataFormat } from '../utils/handlerDataFormat';
+import { handlerDataFormat } from '../../utils/handlerDataFormat';
+
 
 function SearchRecult() {
 
