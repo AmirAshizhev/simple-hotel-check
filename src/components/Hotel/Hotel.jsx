@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './Hotel.css';
 import { useDispatch } from 'react-redux';
-import { handlerDataFormat } from '../utils/handlerDataFormat';
+import { handlerDataFormat } from '../../utils/handlerDataFormat';
+import { declesionOfDays } from '../../utils/handlersOfDeclension';
 
 function Hotel ({hotel, searchData, days, date}) {
 
@@ -30,14 +31,13 @@ function Hotel ({hotel, searchData, days, date}) {
     }
   }
   
-
   return(
     <li className='hotel'>
       <h2 className='hotel__title'>{searchData.hotelName}</h2>
       <div className='hotel__box'>
         <p className='hotel__date'>{handlerDataFormat(date)}</p>
         <hr className='hotel__date-line'/>
-        <span className='hotel__duration'>{days} день</span>
+        <span className='hotel__duration'>{declesionOfDays(days)}</span>
       </div>
       <div className={holelLikeClass} onClick={handleClick}></div>
       <p className='hotel__price'>

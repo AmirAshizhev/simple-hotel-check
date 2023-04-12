@@ -2,6 +2,7 @@ import './HotelCard.css'
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { handlerDataFormat } from '../utils/handlerDataFormat';
+import { declesionOfDays } from '../../utils/handlersOfDeclension';
 
 function HotelCard ({hotelName, priceAvg, stars, hotel}) {
 
@@ -44,7 +45,7 @@ function HotelCard ({hotelName, priceAvg, stars, hotel}) {
         <div className='hotelCard__box'>
           <p className='hotelCard__date'>{handlerDataFormat(search.date)}</p>
           <hr className='hotelCard__date-line'/>
-          <span className='hotelCard__duration'>{search.days} дней</span>
+          <span className='hotelCard__duration'>{declesionOfDays(search.days)}</span>
         </div>
         <ul className='hotelCard__rating'>
           {rating}
